@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import clsx from 'clsx';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardMedia from '@material-ui/core/CardMedia';
@@ -9,7 +8,6 @@ import CardActions from '@material-ui/core/CardActions';
 import Avatar from '@material-ui/core/Avatar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-//import { red } from '@material-ui/core/colors';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 
@@ -35,7 +33,6 @@ const MealCard = ({meal}) => {
   const classes = useStyles();
   const [favorite, setFavorite] = useState(false)
   const [like, setLike] = useState(null)
-  const [showIngredients, setShowIngredients] = useState(null)
 
   const handleFavoriteClick = () => {
       setFavorite(!favorite);
@@ -44,11 +41,6 @@ const MealCard = ({meal}) => {
   const handleLikeClick = () => {
     setLike(!like);
   }
-
-  const handleIngredientsClick = () => {
-    alert('list of ingredients ...')
-  }
-  
   
   return (
     <Card className={classes.card}>
@@ -85,7 +77,7 @@ const MealCard = ({meal}) => {
         <IconButton aria-label="share">
           <ShareIcon />
         </IconButton>
-        <ShowIngredientsButton ingredients={like} handleIngredientsClick={handleIngredientsClick} />
+        <ShowIngredientsButton ingredients={'ingredient 1, ingredient 2, ingredient 3 ...'} />
       </CardActions>
     </Card>
   );

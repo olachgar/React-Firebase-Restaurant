@@ -26,7 +26,7 @@ const MealsList = () => {
   return (
     <div className={classes.root}>
         {
-        data.map((meal) => <MealCard key={meal.id}  meal={meal} />)
+          data.map((meal) => <MealCard key={meal.id}  meal={meal} />)
         }    
     </div>
   );
