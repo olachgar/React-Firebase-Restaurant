@@ -10,6 +10,9 @@ import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogTitle from '@material-ui/core/DialogTitle';
 
 import LikeButton from '../Shared/LikeButton';
 import DisLikeButton from '../Shared/DisLikeButton';
@@ -40,6 +43,7 @@ const MealCard = ({meal}) => {
 
   const handleLikeClick = () => {
     setLike(!like);
+    console.log('ingredients => ', {meal}.ingredients)
   }
   
   return (
@@ -77,7 +81,24 @@ const MealCard = ({meal}) => {
         <IconButton aria-label="share">
           <ShareIcon />
         </IconButton>
-        <ShowIngredientsButton ingredients={'ingredient 1, ingredient 2, ingredient 3 ...'} />
+        <ShowIngredientsButton>
+          <>
+          <DialogTitle id="responsive-dialog-title">
+            <strong>{meal.title}</strong> ingredients {meal.ingredients} :
+          </DialogTitle>
+          <DialogContent>
+            <DialogContentText>
+              <span>Ingredients to make a <strong>{meal.title}</strong> are :</span>
+              <ul>
+                <li>Ingredient #01</li>
+                <li>Ingredient #02</li>
+                <li>Ingredient #03</li>
+              </ul>
+            </DialogContentText>
+          </DialogContent>
+          </>
+        </ShowIngredientsButton>
+        
       </CardActions>
     </Card>
   );

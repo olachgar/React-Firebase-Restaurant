@@ -10,6 +10,7 @@ const tileData = [
     img: 'https://i.pinimg.com/originals/a0/bb/de/a0bbde8083fb71d2d8d896a2f494bbfa.jpg',
     title: 'Kafteji tounsi',
     author: 'author2',
+    Ingredients:['Ingredient #01', 'Ingredient #02',  'Ingredient #03'],
     price: 9.5
   },
   {
@@ -17,6 +18,7 @@ const tileData = [
     img: 'https://www.ala-une-mag.com/wp-content/uploads/2018/06/4F386F32-2B9D-445E-A3CC-1243698E7AF4.jpeg',
     title: 'Mosli poulet aux légumes',
     author: 'author3',
+    Ingredients:['Ingredient #01', 'Ingredient #02',  'Ingredient #03'],
     price: 11
   },
   {
@@ -24,6 +26,7 @@ const tileData = [
     img: 'https://www.mesinspirationsculinaires.com/wp-content/uploads/2015/12/couscous-tunisien-harissa-1-600x330.jpg',
     title: 'Couscous Tunisien',
     author: 'author4',
+    Ingredients:['Ingredient #01', 'Ingredient #02',  'Ingredient #03'],
     price: 10
   },
   {
@@ -31,6 +34,7 @@ const tileData = [
     img: 'https://fac.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Ffac.2F2018.2F07.2F30.2Fcc2bbecb-a24e-4df7-b5a4-aca61b2983c3.2Ejpeg/748x372/quality/80/crop-from/center/tajine-tunisien-de-maitena-biraben.jpeg',
     title: 'Tajine tunisien',
     author: 'author2',
+    Ingredients:['Ingredient #01', 'Ingredient #02',  'Ingredient #03'],
     price: 5
   },
   {
@@ -38,6 +42,7 @@ const tileData = [
     img: 'https://i.ytimg.com/vi/wiyFexIKkkE/maxresdefault.jpg',
     title: 'Ojja aux Merguez et aux œufs',
     author: 'author3',
+    Ingredients:[],
     price: 9.5
   },
   {
